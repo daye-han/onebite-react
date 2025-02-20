@@ -101,7 +101,7 @@ funcB(...arr1);
 // -> 값 자체로써 변수에 저장되고 복사됨
 
 // 5-2. 객체타입
-// -> Array, Function, RegexExp
+// -> Object, Array, Function, RegexExp
 // -> 값 자체가 아닌 "참조값"을 통해 변수에 저장되고 복사됨
 
 // 5-3. 객체타입 주의사항
@@ -338,7 +338,7 @@ const joined = arr6.join(" ");
 // 10. Date 객체와 날짜
 // =========================
 // 1. Date 객체를 생성하는 방법
-let date1 = new Date(); // 생성자. 새로운 date 객체 생성. 현재 시간
+let date1 = new Date(); // 생성자. 새로운 date *객체* 생성. 현재 시간
 console.log(date1);
 
 let date2 = new Date("1997/01/07/10:10"); // 특정 날짜로 생성
@@ -366,7 +366,7 @@ date1.setMonth(2) // 3월로 설정됨
 
 
 // 5. 시간을 여러 포맷으로 출력하기
-console.log(date1.toDateString());
+console.log(date1.toDateString()); // 날짜만 문자열로 출력
 console.log(date1.toLocaleString()); // 현지화된 시간
 
 
